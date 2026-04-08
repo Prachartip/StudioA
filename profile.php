@@ -78,12 +78,31 @@ if (isset($_POST['update_profile'])) {
             justify-content: center;
         }
 
+        /* --- แถบปุ่มด้านบนซ้าย-ขวา --- */
+        .top-nav-container {
+            position: absolute;
+            top: 30px; left: 30px; right: 30px;
+            display: flex; justify-content: space-between;
+            z-index: 20;
+        }
+
+        /* ปรับ CSS ปุ่ม back-btn นิดหน่อยให้เข้ากับ container */
         .back-btn {
-            position: absolute; top: 30px; left: 30px;
             color: #a0a0b0; text-decoration: none; font-size: 16px;
-            display: flex; align-items: center; gap: 8px; transition: 0.3s; z-index: 20;
+            display: flex; align-items: center; gap: 8px; transition: 0.3s;
         }
         .back-btn:hover { color: #00ff88; text-shadow: 0 0 10px rgba(0,255,136,0.5); }
+
+        /* ✨ เพิ่ม CSS ปุ่ม Logout ✨ */
+        .logout-btn {
+            color: #ff4757; text-decoration: none; font-size: 15px;
+            border: 1px solid #ff4757; padding: 8px 20px; border-radius: 8px;
+            transition: all 0.3s ease; font-weight: 500; font-family: 'Kanit', sans-serif;
+        }
+        .logout-btn:hover { 
+            background: #ff4757; color: #ffffff; 
+            box-shadow: 0 0 15px rgba(255, 71, 87, 0.4); 
+        }
 
         .profile-container { width: 100%; max-width: 600px; position: relative; z-index: 10; margin-top: 40px; }
         .profile-card {
@@ -107,7 +126,6 @@ if (isset($_POST['update_profile'])) {
         .form-group { margin-bottom: 24px; position: relative; }
         .input-wrapper { position: relative; }
         
-        /* เพิ่มสไตล์ให้รองรับ textarea (กล่องที่อยู่) */
         .input-wrapper input, .input-wrapper textarea {
             width: 100%; background: #1a1a25; border: 1px solid #2a2a35; border-radius: 6px;
             padding: 24px 16px 8px 16px; color: #ffffff; font-size: 16px; font-family: 'Kanit', sans-serif; outline: none; transition: 0.3s;
@@ -136,7 +154,10 @@ if (isset($_POST['update_profile'])) {
 </head>
 <body>
 
-    <a href="index.php" class="back-btn"><span>← กลับไปหน้าร้านค้า</span></a>
+    <div class="top-nav-container">
+        <a href="index.php" class="back-btn"><span>← กลับไปหน้าร้านค้า</span></a>
+        <a href="logout.php" class="logout-btn">ออกจากระบบ</a>
+    </div>
 
     <div class="profile-container">
         <div class="profile-card">
