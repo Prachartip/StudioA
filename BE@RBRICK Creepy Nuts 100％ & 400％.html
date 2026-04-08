@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIOA - Art Toy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #8f8f8f;
+            padding: 10px 20px;
+            color: white;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.imgur.com/TuwOrmq.png" alt="STUDIOA Logo">
+        <nav>
+            <button onclick="window.location.href='index.html'">หน้าหลัก</button>
+            <button onclick="window.location.href='bearbrick.html'">Bearbrick</button>
+            <button onclick="window.location.href='kaws.html'">Kaws</button>
+            <button onclick="window.location.href='crybaby.html'">Cry Baby</button>
+            <button onclick="window.location.href='skullpanda.html'">SkullPanda</button>
+        </nav>
+  </header>
+  <div class="product-details">
+    <h1>รายละเอียดของสินค้า 1</h1>
+    <img src="https://bearbrick.com/WI/upimage/250131_creepynuts_001_b.png" alt="Product 1">
+    <p>รายละเอียดเพิ่มเติมเกี่ยวกับสินค้า 1...</p>
+</div>
+
+<style>
+    /* ทำให้เนื้อหากลาง */
+    .product-details {
+        display: flex;
+        flex-direction: column; /* จัดเรียงตามแนวตั้ง */
+        justify-content: center; /* จัดแนวนอน */
+        align-items: center; /* จัดแนวตั้ง */
+        text-align: center; /* ทำให้ข้อความตรงกลาง */
+        min-height: 100vh; /* ทำให้เต็มความสูงของหน้าจอ */
+    }
+
+    .product-details img {
+        max-width: 80%; /* ปรับขนาดของรูปภาพ */
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .product-details h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .product-details p {
+        font-size: 16px;
+        max-width: 600px; /* จำกัดความกว้างของข้อความ */
+        line-height: 1.6;
+    }
+</style>
+
+  
+          <style>
+            .history {
+              text-align: center; 
+              margin: 0 auto; 
+              max-width: 800px; 
+            }
+          
+            .history h2 {
+              margin-bottom: 10px; 
+            }
+          
+            .history p {
+              line-height: 1.6; 
+            }
+          </style>
+    <footer>
+        <p>© 2025 STUDIOA. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

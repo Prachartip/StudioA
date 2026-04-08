@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bearbrick</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #8f8f8f; 
+            color: white;
+            padding: 10px 20px;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        /* สไตล์ของ Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+        .product-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+            white-space: nowrap;
+            justify-content: center; /* จัดให้อยู่ตรงกลาง */
+            max-width: 80%; /* ป้องกันไม่ให้กว้างเกินไป */
+         margin: 0 auto; /* จัดให้อยู่กึ่งกลางของหน้า */
+        }
+        .product {
+            width: 200px;
+            text-align: center;
+            flex: 0 0 auto;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .history {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            background-color: #333; 
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.imgur.com/TuwOrmq.png" alt="STUDIOA Logo">
+        <nav>
+            <button onclick="window.location.href='index.html'">หน้าหลัก</button>
+            <button onclick="window.location.href='bearbrick.html'">Bearbrick</button>
+            <button onclick="window.location.href='kaws.html'">Kaws</button>
+            <button onclick="window.location.href='crybaby.html'">Cry Baby</button>
+            <button onclick="window.location.href='skullpanda.html'">SkullPanda</button>
+            <button onclick="window.location.href='products.html'">ดูสินค้า</button>
+        </nav>
+    </header>
+    <section id="home">
+        <img src="https://i.imgur.com/Hq7RWoX.png" alt="profile" 
+        style="width:1400px;height:500px;"/>
+    </section>
+    <style>
+        #home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        #home img {
+            max-width: 600%;
+            max-height: 600%;
+        }
+    </style>
+    <div class="section-title"><h3>คอลเลคชั่นล่าสุด</h3> <h5>คลิกรูปเพื่อดูรายละเอียด</h5></div>
+    <div class="product-container">
+        <div class="product">
+            <a href="Kaws x Squid game YOUNG-HEE Figure (Coloured).html">
+                <img src="https://d2cva83hdk3bwc.cloudfront.net/kaws-x-squid-game-young-hee-figure-coloured-1.jpg" alt="Product 1">
+            </a>
+        </div>
+        <div class="product">
+            <a href="KAWS What Party Figure White.html">
+                <img src="https://d2cva83hdk3bwc.cloudfront.net/kaws-what-party-figure-white-1.jpg" alt="Product 2">
+            </a>
+        </div>
+        <div class="product">
+            <a href="Kaws TIME OFF Vinyl Figure Pink.html">
+                <img src="https://d2cva83hdk3bwc.cloudfront.net/kaws-time-off-vinyl-figure-pink-1.jpg" alt="Product 3">
+            </a>
+        </div>
+        <div class="product">
+            <a href="KAWS Share Vinyl Figure Brown.html">
+                <img src="https://d2cva83hdk3bwc.cloudfront.net/kaws-share-vinyl-figure-brown-1.jpg" alt="Product 4">
+            </a>
+        </div>
+        <div class="product">
+            <a href="KAWS THE PROMISE Vinyl Figure Grey.html">
+                <img src="https://d2cva83hdk3bwc.cloudfront.net/kaws-the-promise-vinyl-figure-grey-1.jpg" alt="Product 5">
+            </a>
+        </div>
+    </div>
+    </div>
+    <main>
+        <div class="container">
+            <h1 class="section-title">Kaws</h1>
+            <p class="text-center">
+                 KAWS หรือชื่อจริงว่า ไบรอัน ดอนเนลลี (Brian Donnelly) เกิดในปี ค.ศ. 1974 ในเมืองเจอร์ซีย์ซิตี รัฐนิวเจอร์ซีย์ เขาจบการศึกษาระดับปริญญาตรีด้านวิจิตรศิลป์ และการวาดภาพประกอบจากสถาบัน School of Visual Arts นิวยอร์ก ในปี ค.ศ. 1996<br> หลังจากเรียนจบเขาก็ทำงานเป็นนักวาดการ์ตูนแอนิเมชั่นฟรีแลนซ์ที่บริษัท Jumbo Pictures ซึ่งเป็นสตูดิโอทำหนังแอนิเมชั่นในเครือบริษัทดิสนีย์ในช่วงสั้นๆโดยทำหน้าที่วาดฉากให้หนังแอนิเมชั่นอย่าง<br> 101 Dalmatians, Daria และ Doug
+ ในระหว่างที่ดอนเนลลีทำงานเป็นนักวาดการ์ตูนในเวลากลางวัน เขาก็แอบออกไปวาดลวดลายเป็นศิลปินกราฟฟิตี้บนตึกรามบ้านช่องตามท้องถนนนิวเจอร์ซีย์ในยามกลางคืน โดยใช้ฉายาและ ‘Tag’ หรือลายเซ็นเฉพาะตัวของศิลปินกราฟฟิตี้ว่า ‘KAWS’ หลังจากนั้นเขาก็ย้ายไปอยู่นิวยอร์ก และเริ่มทำกราฟฟิตี้ด้วยการวาดภาพคาแร็กเตอร์ตัวการ์ตูนของเขาทับลงบนภาพโฆษณาตามป้ายรถเมล์ ตู้โทรศัพท์ และป้ายบิลบอร์ดทั่วนิวยอร์ก ไม่นานหลังจากนั้นชื่อของเขาก็เป็นที่รู้จัก และเป็นที่นิยมเป็นอย่างมาก ก่อนตระเวนสร้างผลงานกราฟฟิตี้ของเขาบนพื้นที่สาธารณะในหลายเมืองใหญ่ทั่วโลก ทั้งปารีส, ลอนดอน, เบอร์ลิน และโตเกียว
+                </p>
+    
+            <div class="vertical-layout">
+                <div class="vertical-item">
+                    <img src="https://i.imgur.com/I8jLf1c.png   " alt="Kaws">
+                    <p>ในปี ค.ศ. 1999 คอวส์ก็ออกแบบและผลิตของเล่นพลาสติกลิมิเต็ดเอดิชั่นกับแบรนด์ญี่ปุ่นอย่างบาวน์ตี้ ฮันเตอร์ (Bounty Hunter) โดยหยิบเอาคาแร็กเตอร์ตัวการ์ตูนชื่อดังอย่างมิกกี้ เมาส์ มาผสมผสานกับคาแร็กเตอร์ตัวการ์ตูนตากากบาทของเขา จนกลายเป็นของเล่นที่ฮิตถล่มทลายในหมู่นักสะสมของเล่นทั่วโลก นอกจากนั้นเขายังสร้างชื่อในโลกศิลปะจากผลงานภาพวาดและประติมากรรมขนาดใหญ่ ด้วยการสร้างคาแร็กเตอร์ตัวละครที่เข้าถึงง่าย และมีความเป็นสากล บางครั้งเขายังหยิบเอาตัวละครการ์ตูนชื่อดังอย่างเดอะซิมป์สันส์, มิชลินแมน, สเมิร์ฟ, สพันจ์บ็อบ สแควร์แพนต์ส หรือแม้แต่เจ้าหนูปรมาณู (Astro Boy) มาตีความใหม่ในรูปแบบของตัวเอง เช่น การใส่ดวงตากากบาท หรือใบหูกระดูกให้กับตัวละครเหล่านั้นอีกด้วยดวงตารูปกากบาทอันเต็มไปด้วยเอกลักษณ์ของเขาลงไปนั่นเอง</p>
+                </div>
+    
+                <div class="vertical-item">
+                    <img src="https://i.imgur.com/QSEWPOt.png" alt="Kaws">
+                </div>
+            </div>
+        </div>
+    
+        <style>
+            .container {
+                text-align: center;
+            }
+    
+            .section-title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+    
+            .vertical-layout {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+            }
+    
+            .vertical-item {
+                text-align: center;
+                max-width: 600px;
+            }
+    
+            .vertical-item img {
+                max-width: 100%;
+                height: auto;
+            }
+    
+            .vertical-item h2 {
+                font-size: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+    
+            .vertical-item p {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+    </main>
+    
+
+    <footer>
+        <p>© 2025 STUDIOA. All Rights Reserved.</p>
+    </footer>
+         <!-- Popup Modal -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="" alt="สินค้า">
+        <p id="modalText"></p>
+    </div>
+</div>
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".product img").forEach((img, index) => {
+        img.addEventListener("click", function () {
+            window.location.href = "product" + (index + 1) + ".html"; // เปิดหน้าใหม่ตามลำดับสินค้า
+        });
+    });
+});
+</script>
+</body>
+</html>

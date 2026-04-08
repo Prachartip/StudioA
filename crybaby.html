@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bearbrick</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #8f8f8f; 
+            color: white;
+            padding: 10px 20px;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .history {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            background-color: #333; 
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .product-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+            white-space: nowrap;
+            justify-content: center; /* จัดให้อยู่ตรงกลาง */
+            max-width: 80%; /* ป้องกันไม่ให้กว้างเกินไป */
+         margin: 0 auto; /* จัดให้อยู่กึ่งกลางของหน้า */
+        }
+        .product {
+            width: 200px;
+            text-align: center;
+            flex: 0 0 auto;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.imgur.com/TuwOrmq.png" alt="STUDIOA Logo">
+        <nav>
+            <button onclick="window.location.href='index.html'">หน้าหลัก</button>
+            <button onclick="window.location.href='bearbrick.html'">Bearbrick</button>
+            <button onclick="window.location.href='kaws.html'">Kaws</button>
+            <button onclick="window.location.href='crybaby.html'">Cry Baby</button>
+            <button onclick="window.location.href='skullpanda.html'">SkullPanda</button>
+            <button onclick="window.location.href='products.html'">ดูสินค้า</button>
+        </nav>
+    </header>
+    <section id="home">
+        <img src="https://i.imgur.com/NeeE1EY.png" alt="profile" 
+        style="width:1400px;height:500px;"/>
+    </section>
+    <style>
+        #home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        #home img {
+            max-width: 600%;
+            max-height: 600%;
+        }
+    </style>
+    <div class="section-title"><h3>คอลเลคชั่นล่าสุด</h3> <h5>คลิกรูปเพื่อดูรายละเอียด</h5></div>
+    <div class="product-container">
+        <div class="product">
+            <a href="CRYBABY Crying for Love Series-Plush Gift Box.html">
+                <img src="https://prod-thailand-res.popmart.com/default/20250122_110725_567720____1_____1200x1200.jpg" alt="Product 1">
+            </a>
+        </div>
+        <div class="product">
+            <a href="Crybaby Crying Parade Series.html">
+                <img src="https://prod-thailand-res.popmart.com/default/20241115_095234_068144____1_____1200x1200.jpg" alt="Product 2">
+            </a>
+        </div>
+        <div class="product">
+            <a href="CRYBABY Crying For Love Series Figures.html">
+                <img src="https://prod-thailand-res.popmart.com/default/20250122_101759_498431____1_____1200x1200.jpg" alt="Product 3">
+            </a>
+        </div>
+        <div class="product">
+            <a href="CRYBABY × Powerpuff Girls Series Figures.html">
+                <img src="https://prod-eurasian-res.popmart.com/default/20240304_164111_296715__1200x1200.jpg" alt="Product 4">
+            </a>
+        </div>
+        <div class="product">
+            <a href="CRYBABY Sunset Concert Series-Plush Doll.html">
+                <img src="https://prod-eurasian-res.popmart.com/default/20240617_143204_955539____4_____1200x1200.jpg" alt="Product 5">
+            </a>
+        </div>
+    </div>
+    </div>
+    <main>
+        <div class="container">
+           <!--<h1 class="section-title">Cry Baby</h1>-->
+            <p class="text-center">
+                การร้องไห้มักถูกมองว่าเป็นความอ่อนแอที่คนๆ นั้นไม่สามารถจัดการกับความรู้สึกของตัวเองได้<br> แล้วทำไมเราถึงจะเป็นคนอ่อนแอบ้างไม่ได้กัน? น้ำตาสามารถสื่อได้ทั้งความเศร้า ความเสียใจและความดีใจ ต่อให้ร้องไห้ด้วยเหตุผลความเสียใจก็ไม่ได้หมายถึงความอ่อนแอเลย…<br>
+                การร้องไห้ออกมานั้นจะทำให้เรารู้สึกดีขึ้นเหมือนกับได้ระบายออกมา ถึงแม้มันจะไม่ได้ทำให้เรื่องราวเปลี่ยนแปลง แต่ก็สามารถปรับอารมณ์เรา และให้เรามีสติกับการดำเนินชีวิตในวันต่อไปด้วยประสบการณ์ที่ผ่านมาได้<br> ซึ่งวันนี้เราไม่ได้มาพูดถึงเรื่องการร้องไห้แต่อย่างใด แต่จะพาคุณไปรู้จักกับ Art Toy หรือของสะสม ที่มีเอกลักษณ์เป็นหยดน้ำตาอย่าง Crybaby จากผลงานของคุณมอลลี่นั่นเอง</p>
+    
+            <div class="vertical-layout">
+                <div class="vertical-item">
+                    <img src="https://cdn.ennxo.com/content/uploads/1600/crybaby-arttoy-x-pop-mart.webp" alt="Basic Types">
+                    <h2>ย้อนเส้นทางสู่ความสำเร็จของคุณมอลลี่</h2>
+                    <p>
+                        คุณมด นิสา ศรีคำดี หรือที่รู้จักกันดีในชื่อวงการ “คุณมอลลี่” ผู้เป็นเจ้าของผลงาน Crybaby ที่ประสบความสำเร็จอย่างล้นหลาม แต่ขอบอกก่อนเลยว่าจุดเริ่มต้นทางสายอาชีพของคุณมอลลี่นั้นไม่ได้เริ่มที่การทำของสะสมแต่อย่างใด</p>
+                </div>
+    
+                <div class="vertical-item">
+                    <img src="https://cdn.ennxo.com/content/uploads/1600/%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B8%97%E0%B8%AD%E0%B8%A2-crybaby-%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%A1%E0%B8%AD%E0%B8%A5%E0%B8%A5%E0%B8%B5%E0%B9%88.webp" alt="Standard Types">
+                    <!--<h2>Standard Types</h2>-->
+                     <p>  คุณมอลลี่จบจากคณะศิลปกรรมศาสตร์ สาขาวิชาออกแบบนิเทศศิลป์ มหาวิทยาลัยราชภัฏสวนสุนันทา โดยอาชีพหลังเรียนจบที่คุณมอลลี่เลือกทำจะเป็นสายออกแบบและกราฟิกดีไซน์ ในบริษัทที่เกี่ยวกับการจัดงานแต่งงาน กระทั่งในปี 2016 ซึ่งเป็นช่วงลดงานรื่นเริงเพื่อไว้อาลัยแด่ในหลวงรัชกาลที่ 9 จึงทำให้งานหลักของคุณมอลลี่ต้องหยุดพักไป และหันมาหาทำงานอดิเรกแทน<br>
+
+                        งานอดิเรกที่ว่านี้คืองานปั้น งานศิลปะ ที่มาจากความชอบของเธอตั้งแต่วัยเด็ก โดยได้เริ่มลองปั้น <b>Crybaby</b> ตัวแรกแล้วโพสต์ลงในอินสตาแกรมส่วนตัว ปรากฏว่ามีคนจีนมาติดต่อเพื่อซื้อตุ๊กตาที่เธอทำ ใครจะไปคิดว่าการลงโพสต์ในครั้งนั้น จะเป็นประตูที่จะพาเธอไปสู่เส้นทางการเป็นนักสร้างของสะสมที่มีชื่อเสียง เพราะหลังจากที่เริ่มขายนั้นก็มีคนจีนติดต่อมาซื้ออีกจำนวนมาก</p>
+                </div>
+    
+                <div class="vertical-item">
+                    <img src="https://cdn.ennxo.com/content/uploads/1600/%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B9%80%E0%B8%A5%E0%B8%84%E0%B8%8A%E0%B8%B1%E0%B9%88%E0%B8%99-crybaby-%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%A1%E0%B8%AD%E0%B8%A5%E0%B8%A5%E0%B8%B5%E0%B9%88.webp" alt="Artist Types">
+                    <!--<h2>Artist Types</h2>-->
+                    <p> จนในปี <b>2017</b> คุณมอลลี่ก็ได้เปิดขาย <b>Crybaby</b> คอลเลคชั่นแรกออกมา เป็นงานที่มีชื่อว่า <b>“NAKED BROWN”</b> กับ <b>“NAKED BLONDE”</b> ซึ่งได้รับกระแสตอบรับดีมากๆ หลังจากนั้นก็มีผลงานคอลเลคชั่นอื่นๆ ออกมาอีกมากมาย จนกระทั่งปี <b>2021</b> ก็ได้มีการตั้งชื่อแบรนด์ว่า <b>“Molly Factory”</b> โดยสินค้าที่ผลิตจะแบ่งออกเป็น 2 ประเภทคือ ผลิตเป็นจำนวนมากจากโรงงาน กับงานแฮนด์เมด แน่นอนว่าไม่ว่าจะประเภทไหนต่างก็ให้ความสำคัญเรื่องคุณภาพและความสวยงามเสมอ
+
+                        เส้นทางในวงการสะสมของเล่นของคุณมอลลี่ยังไม่สุดเพียงเท่านี้ เพราะคุณมอลลี่ได้ทำงานร่วมกับ <b>Pop Mart</b> ที่เป็นธุรกิจร้านขายของเล่นสัญชาติจีน นับว่าคุณมอลลี่เป็นศิลปินไทยคนแรกและคนเดียวในขณะนี้ที่ได้เซ็นสัญญาร่วมงานกับ <b>Pop Mart</b><br><h3><b>ที่มาของ Crybaby</b></h3>
+
+                        <b>Crybaby</b> หรือเด็กร้องไห้ มีคาแรคเตอร์เป็นเด็กผู้หญิงที่ทำหน้าเบะ และมีหยดน้ำตาก้อนโตตรงคลอเบ้า โดยแรงบันดาลใจในการสร้าง <b>Crybaby</b> คุณมอลลี่ได้เล่าไว้ว่าโดยปกติแล้วคนเรามักแสดงแต่ใบหน้าที่เพอร์เฟกต์ ไม่ค่อยแสดงด้านเสียใจให้ใครได้เห็น เพราะอาจจะถูกตีความหมายว่าอ่อนแอ แต่คุณมอลลี่กลับมองว่าไม่เห็นเป็นอะไรเลยหากเราจะร้องไห้ออกมา เพราะน้ำตานั้นมันมีความหมายในหลากหลายมิติที่แตกต่างกันไปของแต่ละคน เลยให้ <b>Crybaby</b> เป็นตัวแทนที่ร้องไห้แทนเรานั่นเอง
+                        
+                        จุดเริ่มต้นก่อนจะมาเป็นคาแรคเตอร์เด็กผู้หญิงร้องไห้นี้ ในสมัยเรียนคุณมอลลี่วาดกระต่ายร้องไห้ <b>(Rabbit Cry)</b> มาก่อน โดยวาดประกอบไดอารี่ว่าวันนี้ร้องไห้เพราะเรื่องอะไร และเรื่องที่ทำให้เธอต้องร้องไห้ หนึ่งในนั้นคือน้องหมาของคุณมอลลี่เสีย จึงได้นำไอเดียหูของน้องหมามาเป็นแรงบันดาลใจในการสร้างเป็นผมของ <b>Crybaby</b></p>
+                </div>
+    
+                <div class="vertical-item">
+                    <img src="https://cdn.ennxo.com/content/uploads/1600/crybaby-%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%A1%E0%B8%AD%E0%B8%A5%E0%B8%A5%E0%B8%B5%E0%B9%88.webp" alt="Secret Types">
+                    <!--<h2>Secret Types</h2>-->
+                    <p>จะเห็นได้ว่าความชื่นชอบในเรื่องศิลปะ การปั้น การเก็บของสะสมของคุณมอลลี่ตั้งแต่วัยเด็ก กับแรงบันดาลใจจากประสบการณ์ที่เคยผ่านมา สู่การเป็นอาร์ตทอย <b>Crybaby</b> ที่เป็นของสะสมที่มีราคาสูง และเป็นที่ต้องการของเหล่านักสะสมอย่างมาก เราเชื่อว่า <b>Crybaby</b> นี้จะทำให้ใครหลายๆ คนกล้าที่จะร้องไห้ออกมา เพราะ <b>Crybaby</b> จะเป็นเพื่อนที่อยู่ข้างคุณ แล้วบอกว่าการร้องไห้นั้นมันไม่ใช่ความอ่อนแอเลย</p>
+                </div>
+    
+                <div class="vertical-item">
+                    <img src="https://cdn.ennxo.com/content/uploads/1600/%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B0%E0%B8%AA%E0%B8%A1%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B9%80%E0%B8%A5%E0%B8%84%E0%B8%8A%E0%B8%B1%E0%B9%88%E0%B8%99-crybaby.webp" alt="ขนาดของ BE@RBRICK">
+                    <h2>คอลเลคชั่น</h2>
+                    <p>ปัจจุบันนั้น Crybaby มีคอลเลคชั่นออกมามาย นอกจากคาแรคเตอร์เด็กผู้หญิงแล้ว ยังมีแบบมอนสเตอร์ต่างๆ อีกด้วย หากใครชื่นชอบผลงาน Crybaby แล้วอยากเก็บสะสม สามารถหาซื้อได้ที่ตามร้าน Art Toy และ Pop Mart หรือติดตามได้ที่เพจ Molly Factory กันได้เลย </p>
+                </div>
+            </div>
+        </div>
+    
+        <style>
+            .container {
+                text-align: center;
+            }
+    
+            .section-title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+    
+            .vertical-layout {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+            }
+    
+            .vertical-item {
+                text-align: center;
+                max-width: 600px;
+            }
+    
+            .vertical-item img {
+                max-width: 100%;
+                height: auto;
+            }
+    
+            .vertical-item h2 {
+                font-size: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+    
+            .vertical-item p {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+    </main>
+    
+
+    <footer>
+        <p>© 2025 STUDIOA. All Rights Reserved.</p>
+    </footer>
+     <!-- Popup Modal -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="" alt="สินค้า">
+        <p id="modalText"></p>
+    </div>
+</div>
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".product img").forEach((img, index) => {
+        img.addEventListener("click", function () {
+            window.location.href = "product" + (index + 1) + ".html"; // เปิดหน้าใหม่ตามลำดับสินค้า
+        });
+    });
+});
+</script>
+</body>
+</html>

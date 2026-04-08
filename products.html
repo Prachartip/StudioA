@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สินค้าทั้งหมด - StudioA</title>
+    <style>
+        /* ตกแต่งหน้าเว็บเบื้องต้น */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #8f8f8f;
+            padding: 10px 20px;
+            color: white;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+        /* 🟢 เพิ่มส่วนนี้เข้ามาแล้ว: สั่งให้กล่องสินค้าเรียงแนวนอน */
+        .product-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: center;
+        }
+        /* ตกแต่งกล่องสินค้า (Product Card) */
+        .card { 
+            border: 1px solid #ddd; 
+            border-radius: 10px; 
+            padding: 15px; 
+            text-align: center; 
+            width: 200px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+        .card img { 
+            width: 100%; 
+            border-radius: 8px; 
+        }
+        .price { color: #e60000; font-weight: bold; }
+        .btn-buy { 
+            background-color: #333; 
+            color: white; 
+            border: none; 
+            padding: 10px 15px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            width: 100%;
+        }
+        .btn-buy:hover { background-color: #555; }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+        <img src="https://i.imgur.com/TuwOrmq.png" alt="STUDIOA Logo">
+        <nav>
+            <button onclick="window.location.href='index.html'">หน้าหลัก</button>
+            <button onclick="window.location.href='bearbrick.html'">Bearbrick</button>
+            <button onclick="window.location.href='kaws.html'">Kaws</button>
+            <button onclick="window.location.href='crybaby.html'">Cry Baby</button>
+            <button onclick="window.location.href='skullpanda.html'">SkullPanda</button>
+            <button onclick="window.location.href='products.html'">ดูสินค้า</button>
+        </nav>
+  </header>
+
+    <h1>  Art Toy </h1>
+
+    <div class="product-container">
+        
+        <div class="card">
+            <img src="https://prod-thailand-res.popmart.com/default/20251208_180023_658688____1_____1200x1200.jpg" alt="Crybaby">
+            <h3>Crybaby</h3>
+            <p class="price">฿ 399</p>
+            <button class="btn-buy">หยิบใส่ตะกร้า</button>
+        </div>
+
+        <div class="card">
+            <img src="https://prod-eurasian-res.popmart.com/default/20251224_111907_712115____1_____1200x1200.jpg" alt="Skullpanda">
+            <h3>Skullpanda </h3>
+            <p class="price">฿ 400</p>
+            <button class="btn-buy">หยิบใส่ตะกร้า</button>
+        </div>
+
+        <div class="card">
+            <img src="https://prod-thailand-res.popmart.com/default/20250909_151630_300365____1_____1200x1200.jpg" alt="Skullpanda">
+            <h3>SKULLPANDA You Found Me! Series Plush Doll Pendant</h3>
+            <p class="price">฿ 850</p>
+            <button class="btn-buy">หยิบใส่ตะกร้า</button>
+        </div>
+
+        <div class="card">
+            <img src="https://prod-thailand-res.popmart.com/default/20250722_183912_503406____1_____1200x1200.jpg" alt="crybaby">
+            <h3>CRYBABY SHINY SHINY SERIES-Plush Pedant Blister Pack</h3>
+            <p class="price">฿ 550</p>
+            <button class="btn-buy">หยิบใส่ตะกร้า</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2025 STUDIOA. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
